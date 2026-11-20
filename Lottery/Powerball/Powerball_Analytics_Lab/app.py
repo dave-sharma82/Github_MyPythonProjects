@@ -123,7 +123,7 @@ with t_patterns:
         fig.update_layout(height=345)
         st.plotly_chart(fig, use_container_width=True)
     with v2:
-        fig = px.histogram(features, x='Consecutive pairs', title='Adjacent-number pairs per draw', discrete_sequence=['#14b8a6'])
+        fig = px.histogram(features,x='Consecutive pairs',title='Adjacent-number pairs per draw',color_discrete_sequence=['#14b8a6'])
         fig.update_layout(height=390)
         st.plotly_chart(fig, use_container_width=True)
         fig = px.scatter(features, x='Sum', y='Range', color='Odd count', hover_data=['Draw','Date'], title='Sum vs number range')
