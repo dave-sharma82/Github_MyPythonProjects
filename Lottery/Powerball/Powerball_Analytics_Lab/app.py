@@ -24,7 +24,7 @@ h1,h2,h3 {letter-spacing:-.025em}
 .small {font-size:0.87rem;color:#8799b0}
 </style>""", unsafe_allow_html=True)
 
-st.markdown('<div class="hero"><h1>🎱 Australian Powerball Analytics Lab</h1><p>Explore historical draws • Compare probability models • Build 10 diversified seven-number games. Developed by Dave Sharma</p></div>', unsafe_allow_html=True)
+st.markdown('<div class="hero"><h1>🎱 Australian Powerball Analytics Lab</h1><p>Explore historical draws • Compare probability models • Build 10 diversified seven-number games. Developed by Dhiraj Sharma</p></div>', unsafe_allow_html=True)
 st.sidebar.header("Control room")
 file = st.sidebar.file_uploader("Replace dataset (CSV)", type="csv")
 source = file if file is not None else Path(__file__).with_name("5132-results.csv")
